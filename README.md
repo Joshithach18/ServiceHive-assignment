@@ -85,8 +85,8 @@ START
 |---|---|
 | Language | Python 3.9+ |
 | Agent Framework | LangGraph 0.2+ |
-| LLM | Claude 3 Haiku (`claude-3-haiku-20240307`) |
-| LLM Client | LangChain-Anthropic |
+| LLM | llama-3.1-8b-instant |
+| LLM Client | LangChain-groq |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` (local, CPU) |
 | Vector Store | FAISS (in-memory) |
 | State Persistence | `MemorySaver` (LangGraph built-in) |
@@ -117,7 +117,7 @@ autostream-agent/
 
 ### Prerequisites
 - Python 3.9 or higher
-- An [Anthropic API key](https://console.anthropic.com/) (free tier works)
+- An [Groq API key](https://console.groq.com/) (free tier works)
 
 ### Step 1 — Clone the repository
 ```bash
@@ -149,7 +149,7 @@ cp .env.example .env
 ```
 Open `.env` and replace the placeholder with your actual key:
 ```
-ANTHROPIC_API_KEY=sk-ant-your-real-key-here
+GROQ_API_KEY=sk-ant-your-real-key-here
 ```
 
 ---
